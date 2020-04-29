@@ -176,9 +176,7 @@ img {
 .my-3 {
   margin: 3rem 0;
 }
-.mr {
-  margin-right: 0.5rem;
-}
+
 /* Grid */
 .grid-2 {
   display: grid;
