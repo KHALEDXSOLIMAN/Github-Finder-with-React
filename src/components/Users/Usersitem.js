@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 class Usersitem extends Component {
-  constructor() {
-    super();
-    this.state = {
-      id: 1,
-      login: 'mojombo',
-      avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
-      html_url: 'https://github.com/mojombo',
-    };
-  }
   render() {
-    const { login, avatar_url, html_url } = this.state;
+    const { login, avatar_url, html_url } = this.props.user;
     return (
       <div>
         <div className="card text-center">
           <img
             className="round-img"
-            style={{ width: '60px' }}
+            style={{ width: '60px', alignSelf: 'center' }}
             src={avatar_url}
             alt=""
           ></img>
