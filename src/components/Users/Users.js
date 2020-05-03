@@ -37,8 +37,8 @@ class Users extends Component {
         <Container>
           <Row>
             {this.state.Users.map((user) => (
-              <Col xs={6} md={4} lg={3}>
-                <Usersitem key={user.id} user={user} />
+              <Col xs={6} md={4} lg={3} key={user.id}>
+                <Usersitem user={user} />
               </Col>
             ))}
           </Row>
