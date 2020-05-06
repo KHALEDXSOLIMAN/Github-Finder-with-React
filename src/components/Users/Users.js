@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Usersitem from './Usersitem';
 import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';
@@ -23,7 +23,7 @@ const Users = ({ users, loading }) => {
     );
   }
 };
-Users.PropTypes = {
+Users.propTypes = {
   users: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired,
 };
