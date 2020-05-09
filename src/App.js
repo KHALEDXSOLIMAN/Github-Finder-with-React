@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Navbar from './components/layout/Navbar';
 import Users from './components/Users/Users';
+import Search from './components/Users/Search';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Search />
         <Users loading={this.state.loading} users={this.state.users} />
       </div>
     );
