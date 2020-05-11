@@ -1,0 +1,7 @@
+{
+    "[json]": {
+    
+    },
+    "prettier.singleQuote": true
+    "emmet.includeLanguages": {"javascript":"javascriptreact"}
+}
