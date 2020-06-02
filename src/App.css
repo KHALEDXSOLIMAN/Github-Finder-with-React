@@ -349,6 +349,9 @@ table th {
 }
 
 /* Navbar */
+.navbar-collapse {
+  position: relative;
+}
 .navbar {
   display: flex;
   justify-content: space-between;

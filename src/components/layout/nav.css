@@ -361,7 +361,9 @@ table th {
 .navbar ul {
   display: flex;
 }
-
+.red {
+  color: aqua;
+}
 .navbar a {
   color: #fff;
   padding: 0.45rem;

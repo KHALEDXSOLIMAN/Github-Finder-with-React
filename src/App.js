@@ -57,7 +57,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Navbar />
+          <Navbar className />
           <div className="container">
             <Alert alert={this.state.alert} />
             <Switch>
