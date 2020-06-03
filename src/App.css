@@ -115,6 +115,11 @@ img {
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
 }
+.xcard {
+  padding: 1rem;
+  border: #ccc 1px dotted;
+  margin: 0.7rem 0;
+}
 
 /* List */
 .list {
@@ -180,7 +185,7 @@ img {
   margin-right: 0.5rem;
 }
 /* Grid */
-.grid-2 {
+.xgrid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -246,10 +251,26 @@ img {
   background: var(--light-color);
   color: #333;
 }
+.Palette-1 {
+  background-color: #07d2c3;
+  color: #fff;
+}
+.Palette-2 {
+  background: #9e7be3;
+  color: #fff;
+}
+.Palette-3 {
+  background: #fb5da5;
+  color: #fff;
+}
+.Palette-4 {
+  background: #6891ff;
+  color: #fff;
+}
 
 .btn-primary,
 .bg-primary,
-.badge-primary,
+.xbadge-primary,
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
