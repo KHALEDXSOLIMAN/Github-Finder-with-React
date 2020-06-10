@@ -30,14 +30,10 @@ const Xavbar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink>
-                <Link to="/">Home</Link>
-              </NavLink>
+              <Link to="/">Home</Link>
             </NavItem>
             <NavItem>
-              <NavLink className="ml-auto">
-                <Link to="/about">About</Link>
-              </NavLink>
+              <Link to="/about">About</Link>
             </NavItem>
           </Nav>
         </Collapse>

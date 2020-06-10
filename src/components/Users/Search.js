@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-
-const Search = ({ showClear, clearUsers, searchUsers, setAlert }) => {
+import GithupContext from '../../context/githup/githupContext';
+const Search = ({ showClear, clearUsers, setAlert }) => {
+  const githupContext = useContext(GithupContext);
   const [text, setText] = useState('');
 
   const onCange = (e) => {
@@ -12,7 +13,7 @@ const Search = ({ showClear, clearUsers, searchUsers, setAlert }) => {
     if (text === '') {
       setAlert('please enter something', 'secondary ');
     } else {
-      searchUsers(text);
+      githupContext.searchUsers(text);
       setText('');
     }
   };
@@ -53,7 +54,6 @@ const Search = ({ showClear, clearUsers, searchUsers, setAlert }) => {
 };
 
 Search.propTypes = {
-  searchUsers: PropTypes.func.isRequired,
   clearUsers: PropTypes.func.isRequired,
   showClear: PropTypes.bool.isRequired,
   setAlert: PropTypes.func.isRequired,

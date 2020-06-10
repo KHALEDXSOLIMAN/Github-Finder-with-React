@@ -42,7 +42,7 @@ const User = ({ getUser, getUserRepos, user, loading, repos, match }) => {
       <div className=" xcard grid">
         <div className=" ">
           <div className="row">
-            <div class="all-center col-lg-5 col-md-4 col-sm-4 col-xs-12 ">
+            <div className="all-center col-lg-5 col-md-4 col-sm-4 col-xs-12 ">
               <img
                 src={avatar_url}
                 className="round-img"
@@ -56,7 +56,7 @@ const User = ({ getUser, getUserRepos, user, loading, repos, match }) => {
               </p>
             </div>
 
-            <div class="col-lg-7 col-md-8 col-sm-7 col-xs-12 ">
+            <div className="col-lg-7 col-md-8 col-sm-7 col-xs-12 ">
               {bio && (
                 <Fragment>
                   <h3>Bio</h3>
@@ -73,6 +73,7 @@ const User = ({ getUser, getUserRepos, user, loading, repos, match }) => {
                     </Fragment>
                   )}
                 </li>
+
                 <li>
                   {company && (
                     <Fragment>
