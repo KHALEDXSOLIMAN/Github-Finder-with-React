@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
-import GithupContext from '../../context/githup/githupContext';
-const Search = ({ showClear, clearUsers, setAlert }) => {
-  const githupContext = useContext(GithupContext);
+import GithubContext from '../../context/github/githubContext';
+const Search = ({ setAlert }) => {
+  const githubContext = useContext(GithubContext);
   const [text, setText] = useState('');
 
   const onCange = (e) => {
@@ -13,7 +13,7 @@ const Search = ({ showClear, clearUsers, setAlert }) => {
     if (text === '') {
       setAlert('please enter something', 'secondary ');
     } else {
-      githupContext.searchUsers(text);
+      githubContext.searchUsers(text);
       setText('');
     }
   };
@@ -41,10 +41,10 @@ const Search = ({ showClear, clearUsers, setAlert }) => {
           />
         </div>
       </form>
-      {showClear && (
+      {githubContext.users.length > 0 && (
         <button
           className="btn btn-light btn-block rounded"
-          onClick={clearUsers}
+          onClick={githubContext.clearUsers}
         >
           Clear
         </button>
@@ -54,8 +54,6 @@ const Search = ({ showClear, clearUsers, setAlert }) => {
 };
 
 Search.propTypes = {
-  clearUsers: PropTypes.func.isRequired,
-  showClear: PropTypes.bool.isRequired,
   setAlert: PropTypes.func.isRequired,
 };
 export default Search;
