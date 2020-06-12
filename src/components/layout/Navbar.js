@@ -9,7 +9,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 
 const Xavbar = (props) => {
@@ -20,7 +19,7 @@ const Xavbar = (props) => {
   return (
     <div>
       <div className="container"></div>
-      <Navbar color="primary" dark expand="md">
+      <Navbar className="xlink" color="primary" dark expand="md">
         <NavbarBrand href="/">
           {' '}
           <i className={props.icon}></i>
@@ -30,10 +29,14 @@ const Xavbar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <Link to="/">Home</Link>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                Home
+              </Link>
             </NavItem>
             <NavItem>
-              <Link to="/about">About</Link>
+              <Link to="/about" style={{ textDecoration: 'none' }}>
+                About
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
