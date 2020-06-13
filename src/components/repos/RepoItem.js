@@ -5,7 +5,7 @@ export const RepoItem = ({ repo }) => {
   return (
     <Fragment>
       <a
-        className=" btn btn-outline-primary mr-3 "
+        className=" btn btn-outline-primary mr-3 mt-2 "
         href={repo.html_url}
         role="button"
       >

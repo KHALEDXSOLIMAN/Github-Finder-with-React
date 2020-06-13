@@ -15,7 +15,7 @@ const Users = () => {
         <Container>
           <Row>
             {users.map((user) => (
-              <Col xs={6} md={4} lg={3} key={user.id}>
+              <Col xs={12} sm={6} md={4} lg={3} key={user.id}>
                 <Usersitem user={user} />
               </Col>
             ))}
