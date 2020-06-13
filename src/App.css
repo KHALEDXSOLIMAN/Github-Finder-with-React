@@ -413,4 +413,9 @@ table th {
   .lead {
     font-size: 1rem;
   }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
 }
