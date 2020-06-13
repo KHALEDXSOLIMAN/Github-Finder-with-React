@@ -11,7 +11,6 @@ import GithubState from './context/github/GithubState';
 import ALertState from './context/alert/AlertState';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
 
 const App = () => {
   return (

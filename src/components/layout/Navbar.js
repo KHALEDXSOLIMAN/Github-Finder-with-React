@@ -19,14 +19,14 @@ const Xavbar = (props) => {
   return (
     <div>
       <div className="container"></div>
-      <Navbar className="xlink" color="primary" dark expand="md">
+      <Navbar color="primary" dark expand="md">
         <NavbarBrand href="/">
           {' '}
           <i className={props.icon}></i>
           {props.title}
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse mr-auto isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
               <Link to="/" style={{ textDecoration: 'none' }}>

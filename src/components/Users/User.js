@@ -32,7 +32,7 @@ const User = ({ match }) => {
   if (loading) return <Spinner />;
   return (
     <Fragment>
-      <Link to="/" className="btn btn-light">
+      <Link to="/" className="btn btn-light mr-2">
         Back
       </Link>
       Hireable:{' '}
@@ -41,7 +41,7 @@ const User = ({ match }) => {
       ) : (
         <i className="fas fa-times-circle text-danger"></i>
       )}
-      <div className=" xcard grid">
+      <div className=" card grid">
         <div className=" ">
           <div className="row">
             <div className="all-center col-lg-5 col-md-4 col-sm-4 col-xs-12 ">
@@ -107,10 +107,12 @@ const User = ({ match }) => {
         <div className="badge Palette-4">public Gists: {public_gists} </div>
       </div>
       <div className=" xcard  ml-10px">
-        <div>
+        <div className="mb-1">
           <strong>Last Repos</strong>
         </div>
-        <Repos repos={repos} />
+        <div>
+          <Repos repos={repos} />
+        </div>
       </div>
     </Fragment>
   );
