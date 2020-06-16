@@ -41,7 +41,7 @@ const User = ({ match }) => {
       ) : (
         <i className="fas fa-times-circle text-danger"></i>
       )}
-      <div className=" card grid">
+      <div className=" xcard grid">
         <div className=" ">
           <div className="row">
             <div className="all-center col-lg-5 col-md-4 col-sm-4 col-xs-12 ">
